@@ -34,7 +34,7 @@ app = Flask(__name__)
 run_with_ngrok(app)
 
 # Model saved with Keras model.save()
-MODEL_PATH ="/vgg16.py"
+MODEL_PATH ="vgg16.py"
 
 # Load your trained model
 #from tensorflow.keras.applications.mobilenet import MobileNet
