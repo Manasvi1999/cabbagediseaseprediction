@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body{
+background-image:url('https://static.vecteezy.com/system/resources/thumbnails/001/401/677/small/abstract-polygonal-shape-black-background-free-vector.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+}
+div.gallery {
+  margin-left: 65px;
+  border: 5px solid black;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border:15px solid yellow;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+background-color:white;
+border-top:5px solid black;
+  padding: 15px;
+  text-align: center;
+  text-shadow:2px 2px brown;
+  font-size:130%;
+}
+
+div.top{
+margin-top:95px;
+}
+h1{
+margin:0;
+text-shadow:2px 2px grey;
+font-size:400%;
+text-align:center;
+color:white;
+font-style:italic;
+}
+</style>
+</head>
+<body>
+<h1>Major Diseases on Cabbage</h1>
+<div class="top">
+<div class="gallery">
+  <a target="_blank" href="{{url_for('static',filename='images/Leafminer.jpg')}}">
+    <img src="{{url_for('static',filename='images/Leafminer.jpg')}}" alt=" " width="600" height="400">
+  </a>
+  <div class="desc">Leaf Miner</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="{{url_for('static',filename='images/backmoth.jpg')}}">
+    <img src="{{url_for('static',filename='images/backmoth.jpg')}}" alt=" " width="630" height="392">
+  </a>
+  <div class="desc">Backmoth</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="{{url_for('static',filename='images/blackrot.jpeg')}}">
+    <img src="{{url_for('static',filename='images/blackrot.jpeg')}}" alt=" " width="600" height="400">
+  </a>
+  <div class="desc">Black Rot</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="{{url_for('static',filename='images/maggots.jpeg')}}">
+    <img src="{{url_for('static',filename='images/maggots.jpeg')}}" alt=" " width="600" height="400">
+  </a>
+  <div class="desc">Maggots</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{{url_for('static',filename='images/mildew.jpg')}}">
+    <img src="{{url_for('static',filename='images/mildew.jpg')}}" alt=" " width="600" height="400">
+  </a>
+  <div class="desc">Mildew</div>
+</div>
+</div>
+
+
+<a href="/upload.html" class="btn btn-success" role="button" style="margin-top:65px;margin-left:500px;">Next</a>
+
+
+</body>
+</html>
